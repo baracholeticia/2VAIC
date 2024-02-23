@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anota Venda</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 3px;
+            flex: 1 1 100vw;
+        }
+
+        header, main, footer{
+            background: palegreen;
+            display: flex;
+            margin: 2px;
+        }
+        header {
+            font-family: fantasy;
+            flex: 1 1 100vw;
+            height: 100px;
+        }
+
+        header img {
+            width: 100px;
+        }
+
+        header #anota{
+            text-align: center;
+            color: lightcoral;
+            font: 30pt;
+            margin: 1%;
+            font-size: 350%;
+        }
+
+        nav {
+            margin: 2px;
+            background: palegreen;
+            flex: 1 1 200px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav #site{
+            text-align: center;
+            background-color: palegreen;
+            color: lightcoral;
+            font: 30pt;
+            display: block;
+            font-weight: bold;
+            margin: 8%;
+            font-size: 150%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li{
+            border-top: 1px solid lightcoral;
+        }
+        nav ul li a{
+            text-align: left;
+            color: lightcoral;
+            font: 20pt;
+            display: block;
+            padding: 8px 8px;
+        }
+
+        nav ul li a:hover {
+            padding: 8px 8px;
+            background-color: lightcoral;
+            color: palegreen;
+            transition: all .3s ease;
+        }
+        main {
+            flex: 20 1 500px;
+            height: calc(100vh - 224px);
+        }
+
+        main li {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        main li a{
+            margin: 2px;
+            background-color: lightcoral;
+            font-size: 300%;
+            text-align: center;
+            color: palegreen;
+            font: 20pt;
+            display: block;
+            padding: 180px 100px;
+        }
+
+        main li a:hover {
+            padding: 180px 100px;
+            background-color: palegreen;
+            color: lightcoral;
+            transition: all .3s ease;
+        }
+
+        footer {
+            flex: 1 1 100vw;
+            height: 100px;
+            color: lightcoral;
+            font-size: 150%;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        @media only screen and (max-width: 932px) {
+            main {
+                height: calc(100vh - 330px);
+            }
+            aside {
+                flex: 1 1 100vw;
+                height: 100px;
+            }
+        }
+
+        @media only screen and (max-width: 717px){
+            nav {
+                height: 100px;
+            }
+            main {
+                height: calc(100vh - 436px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a><img src="./img/ano6tavendas.png"></img></a>
+        <a id="anota">DASHBOARD</a>
+    </header>
+    <nav>
+        <a href="#" id="site">ANOTA VENDAS</a>
+        <ul>
+            <li><a href="#">DASHBOARD</a></li>
+            <li><a href="#">PRODUTO</a></li>
+            <li><a href="#">USUÁRIO</a></li>
+            <li><a href="#">DESLOGAR</a></li>
+        </ul>
+    </nav>
+    <main>
+            <li><a href="#">XXXXXX</a></li>
+            <li><a href="#">XXXXXX</a></li>
+            <li><a href="#">XXXXXX</a></li>
+    </main>
+    <footer>RODAPÉ</footer>
+</body>
+</html>
